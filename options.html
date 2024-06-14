@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extension Options</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Extension Options</h1>
+        <div>
+            <label for="model">Model Name:</label>
+            <input type="text" id="model" placeholder="Enter model name">
+            <button id="saveModel">Save</button>
+        </div>
+        <div id="css-test" style="display: none;">CSS Loaded</div>
+        <script src="options.js"></script>
+        <div id="toast-container"></div>
+    </div>
+</body>
+</html>

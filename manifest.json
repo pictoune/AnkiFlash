@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "AnkiFlash",
+  "version": "0.1.0",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "options_page": "options.html",
+  "icons": {
+    "48": "icons/icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/refresh_logo.svg"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

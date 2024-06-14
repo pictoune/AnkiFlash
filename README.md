@@ -1,4 +1,4 @@
-# AnkiFlash
+# <img src="icons/icon.png" alt="AnkiFlash Logo" width="35"/> AnkiFlash <img src="icons/icon.png" alt="AnkiFlash Logo" width="35"/>
 
 AnkiFlash is a Chrome extension that allows users to generate flashcards directly from selected text on a webpage and add them to Anki. This project is a functional prototype and is currently under development. There are many improvements to be made, such as making the code more robust, secure, and well-documented, as well as ensuring compatibility across different devices. Currently, it works primarily on Apple Silicon chips.
 
